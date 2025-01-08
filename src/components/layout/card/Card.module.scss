@@ -1,0 +1,44 @@
+@use '../../../styles/globals.scss' as *;
+
+.card-container{
+    box-sizing: border-box !important;
+    
+    div{
+        box-sizing: border-box !important;
+        padding: 15px;
+
+    }
+}
+
+
+.button-card{
+    padding: 5px 10px;
+    font-family: $text;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.primary{
+    border: 2px solid $color-primary-base;
+    background-color: $color-primary-300;
+    color: $color-primary-50;
+    &:hover{
+        background-color: $color-primary-200;
+        color: $color-primary-300;
+    }
+}
+
+.secondary{
+    border: 2px solid $color-primary-300;
+    color: $color-primary-300;
+    
+    &:hover{
+        background-color: $color-primary-200;
+        color: $color-light;
+        border: 2px solid $color-primary-base;
+    }
+}

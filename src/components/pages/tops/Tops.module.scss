@@ -1,0 +1,31 @@
+@use '../../../styles/globals.scss' as *;
+
+.info-container{
+    padding: 0 25px;
+
+
+    h1{
+        color: $color-primary-300;
+        text-align: center;
+    }
+    p{
+        font-family: $text;
+        font-size: 20px;
+    }
+}
+.description-container{
+    p{
+        font-family: $text;
+        font-size: 23px;
+    }
+}
+
+@include cel{
+    .info-container{
+        p{
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+}
+

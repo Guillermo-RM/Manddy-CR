@@ -1,0 +1,49 @@
+@use '../../../styles/globals.scss' as *;
+
+
+footer{
+    background-color: $color-primary-300;
+    color: white;
+    padding: 0 25px;
+
+    .text-container{
+
+        h2{
+            color: $color-primary-50;
+        }
+        .description{
+            font-family: $text;
+            font-size: 30px;
+        }
+        
+        .adress{
+            color: $color-primary-50;
+            font-weight: 600;
+        }
+        .number{
+            font-weight: 500;
+        }
+    }
+
+
+    .seo-container{
+
+        .links-container{
+            text-align: center;
+
+            h3{
+                color: $color-primary-50;
+            }
+            .link{
+                color: white;
+                font-size: 18px;
+                margin: 2px 0;
+                transition: 0.5s;
+                
+                &:hover{
+                    color: $color-primary-50;
+                }
+            }
+        }
+    }
+}

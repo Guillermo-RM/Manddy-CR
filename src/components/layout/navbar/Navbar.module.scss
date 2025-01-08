@@ -1,0 +1,159 @@
+@use '../../../styles/globals' as *;
+
+.navbar-container{
+  background-color: $color-primary-150;
+  h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+
+    a{
+      text-decoration: none;
+      color: $color-primary-300;
+      &:hover{
+        color: $color-primary-300;
+      }
+    }
+    span{
+      font-size: 3.5vw;
+      font-family: Arial, sans-serif;;
+      font-weight: 400;
+    }
+  }
+
+  ul{
+    text-align: center;
+    a{
+      font-size: 4.8vw;
+      color: black;
+    }
+  }
+}
+
+@include cel {
+  .navbar-container{
+  
+    h1{
+      font-size: 7vw;
+
+      span{
+        font-size: 4vw;
+      }
+    }
+  
+    ul{
+      a{
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+@include tablet{
+  .navbar-container{
+  
+    h1{
+      font-size: 4.9vw;
+      span{
+        font-size: 3.2vw;
+
+      }
+    }
+  
+    ul{
+      a{
+        font-size: 2.8vw;
+      }
+    }
+  }
+}
+@include tablet-50{
+  .navbar-container{
+
+    h1{
+      font-size: 4.5vw;
+
+      span{
+        font-size: 3vw;
+      }
+    }
+  
+    ul{
+      a{
+        font-size: 2.2vw;
+      }
+    }
+  }
+}
+@include tablet-100{
+  .navbar-container{
+  
+    h1{
+      font-size: 3.5vw;
+
+      span{
+        font-size: 2.5vw;
+      }
+    }
+  
+    ul{
+      a{
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+@include desktop{
+  .navbar-container{
+  
+    h1{
+      font-size: 4.2vw;
+
+      span{
+        font-size: 2vw;
+      }
+    }
+  
+    ul{
+      a{
+        font-size: 2vw;
+      }
+    }
+  }
+}
+@include desktop-50{
+  .navbar-container{
+  
+    h1{
+      font-size: 3.8vw;
+
+      span{
+        font-size: 2vw;
+      }
+    }
+  
+    ul{
+      a{
+        font-size: 1.8vw;
+      }
+    }
+  }
+}
+@include desktop-100{
+  .navbar-container{
+  
+    h1{
+      font-size: 3.4vw;
+
+      span{
+        font-size: 1.5vw;
+      }
+    }
+  
+    ul{
+      a{
+        font-size: 1.7vw;
+      }
+    }
+  }
+}

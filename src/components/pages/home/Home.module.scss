@@ -1,0 +1,82 @@
+@use '../../../styles/globals.scss' as *;
+
+h2{
+    text-align: center;
+    padding: 30px 0;
+}   
+
+.product-container{
+
+    .cards-presentation{
+        box-sizing: border-box;
+    }
+}
+
+.about-container{
+    background-color: $color-primary-150;
+
+    .info-container{
+        div{
+            
+            p{
+                font-weight: 600;
+            }
+            .text-about{
+                text-transform: uppercase;
+                font-family: $text;
+                letter-spacing: 1px;
+                font-size: 12px;
+            }
+            
+            .text-title{
+                font-family: $subtitles;
+                font-size: 25px;
+                color: $color-primary-300;
+                letter-spacing: 1px;
+            }
+    
+    
+            .button-about{
+                text-decoration: none;
+                text-align: center;
+                background-color: white;
+                padding: 5px 10px;
+                font-family: $text;
+                border-radius: 10px;
+                transition: 0.5s;
+                box-sizing: border-box;
+                font-size: 20px;
+                border: 2px solid $color-primary-300;
+                color: $color-primary-300;
+                
+                &:hover{
+                    background-color: $color-primary-250;
+                    color: $color-light;
+                    border: 2px solid $color-primary-base;
+                }
+            }
+        }
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 0 100px 0 100px;
+    }
+}
+
+
+
+@include cel{
+    .info-container{
+        display: flex;
+    }
+}
+
+@include tablet{
+    .about-container{
+        img{
+            max-height: 600px;
+        }
+    }
+}
